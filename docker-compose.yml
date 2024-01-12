@@ -1,0 +1,10 @@
+# docker-compose.yml
+version: '3'
+services:
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "9999:9999"
+      - "5000:5000"
